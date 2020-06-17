@@ -1,2 +1,2 @@
-# vim-learn-notes
-Vim学习笔记
+# vimAll
+关于vim的汇总
