@@ -179,4 +179,6 @@ autocmd vimenter * NERDTree
 "               goimports
 """"""""""""""""""""""""""""""""""""""""""
 " 保存.go文件时自动执行goimports
-autocmd BufWritePre *.go :GoImports
+" autocmd BufWritePre *.go :GoImports
+" 将默认的格式化工具修改为goimports
+let g:go_fmt_command="goimports"
