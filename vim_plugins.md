@@ -13,6 +13,8 @@
 * [十一、`tab`补全插件](#十一tab补全插件)
 * [十二、`go`跳转插件`godef`](#十二go跳转插件godef)
 * [十三、`NERDTree`的安装](#十三nerdtree的安装)
+* [十四、`LeaderF`的安装](#十四leaderf的安装)
+* [十五、`tagbar`的安装](#十五tagbar的安装)
 
 <!-- vim-markdown-toc -->
 
@@ -240,4 +242,27 @@ autocmd Filetype go nnoremap <buffer> <C-]> :call GodefUnderCursor()<cr>
 ### 十三、`NERDTree`的安装
 ```shell
 Plugin 'scrooloose/nerdtree'
+```
+### 十四、`LeaderF`的安装
+该插件需要Python的支持
+```shell
+Plugin 'Yggdroot/LeaderF'
+```
+安装完成后执行`:LeaderfFile`即可进行文件搜索
+### 十五、`tagbar`的安装
+```shel
+Plugin 'majutsushi/tagbar'
+```
+该插件需要`ctags`的支持
+```shell
+# ubuntu
+sudo apt-get install ctags
+# centos
+sudo yum install ctags
+# mac
+brew install ctags
+```
+最后在`.vimrc`设置使用的`ctags`插件位置，必须要设置对，如：
+```shell
+let g:tagbar_ctags_bin='/usr/bin/ctags'
 ```
